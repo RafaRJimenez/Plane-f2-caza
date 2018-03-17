@@ -54,7 +54,7 @@ $(document).ready(function(){
 			var td = $("#"+caza.x+"-"+caza.y);
 		td.html("<img src='media/kaza-N.jpg'>");
 	 	}
- // console.log("turnLeft was called!"); Esto no tira why?????
+
 }
 
 $(window).keydown(function(e){
