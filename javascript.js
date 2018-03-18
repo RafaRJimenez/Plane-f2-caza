@@ -17,6 +17,7 @@ $(document).ready(function(){
 				arr[i] = new Array;
 				for (z=0;z<10;z++){	
 					arr[i][z] = i + "-" + z	;
+					arr[i][z] = "<img src='media/mushroom.png'>";
 					matrix+="<td id='"+i+"-"+z+"'>"+arr[i][z]+"</td>";
 				}
 				matrix+="</tr>";
@@ -88,7 +89,7 @@ $(document).ready(function(){
 
 	function moveForward(caza){
 		var td = $("#"+caza.x+"-"+caza.y); // removing previous td 
-		td.html(""); // removing previous td 
+		td.html("<img src='media/greyMushroom.jpg'>"); // removing previous td 
 	if (caza.direction == "N") {
 		caza.x -=1;
 		if (caza.x === -1){
